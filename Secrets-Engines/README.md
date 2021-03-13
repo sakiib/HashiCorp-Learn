@@ -29,3 +29,6 @@ kvpath/       kv           kv_985e94e3           n/a
 secret/       kv           kv_3f24bab9           key/value secret storage
 sys/          system       system_208daed2       system endpoints used for control, policy and debugging
 ```
+### Disable custom secret engine
+* `$ vault secrets disable <your-path>/`
+* check list now: `$ vault secrets list`
