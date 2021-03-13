@@ -11,3 +11,5 @@
 * Optional JSON output using jq tool: `vault kv get -format=json secret/hello | jq -r .data.data.excited`
 ### Deleting a Secret
 * `vault kv delete secret/hello`
+
+### In addition to writing data directly from command line, it can also read values in key, value pairs from stdin & files. For real secrets files are preferred.
