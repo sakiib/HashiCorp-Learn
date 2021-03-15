@@ -7,6 +7,7 @@
 * Notice that, command creates a new version of the secrets and replaces any pre-existing data at the path if any.
 ### Getting a Secret
 * `vault kv get secret/hello`
+* `vault kv get -version=<version_number> secret/hello`
 * To print only the value of a given field: use the `-field=<key_name>` flag. E.g: `vault kv get -field=excited secret/hello`
 * Optional JSON output using jq tool: `vault kv get -format=json secret/hello | jq -r .data.data.excited`
 ### Deleting a Secret
