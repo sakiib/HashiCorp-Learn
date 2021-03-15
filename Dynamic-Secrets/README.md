@@ -1,6 +1,6 @@
 # [Dynamic Secrets](https://learn.hashicorp.com/tutorials/vault/getting-started-dynamic-secrets?in=vault/getting-started)
 
-### [Google Cloud Secrets Engine] (https://www.vaultproject.io/docs/secrets/gcp)
+### [Google Cloud Secrets Engine](https://www.vaultproject.io/docs/secrets/gcp)
 
 * Enable the Google Cloud secrets engine: `$ vault secrets enable gcp`
 * Configure the secrets engine with account credentials, or leave blank or unwritten to use Application Default Credentials.
