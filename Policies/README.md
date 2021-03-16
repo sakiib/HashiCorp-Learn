@@ -17,3 +17,6 @@ path "secret/data/foo" {
 * Built-in policies `root` & `default` are required & can't be deleted.
 * View the default policy: `$ vault policy read default`
 * Write policy help: `$ vault policy write -h`
+* Write a new policy: `$ vault policy write <name-of-the-policy> </path/to/the/hcl/policy/file>`
+* List all the policies: `$ vault policy list`
+* Read a particular policy: `$ vault policy read <name-of-the-policy>`
