@@ -20,3 +20,17 @@ path "secret/data/foo" {
 * Write a new policy: `$ vault policy write <name-of-the-policy> </path/to/the/hcl/policy/file>`
 * List all the policies: `$ vault policy list`
 * Read a particular policy: `$ vault policy read <name-of-the-policy>`
+
+### Test the policy
+* Create a `token` and add the `my-policy` policy to it: `$ vault token create -policy=my-policy`
+```
+Key                  Value
+---                  -----
+token                s.X6gvFko7chPilgV0lpWXsdeu
+token_accessor       kwgaMv7lz09a5oULHIT3UQ6z
+token_duration       768h
+token_renewable      true
+token_policies       ["default" "my-policy"]
+identity_policies    []
+policies             ["default" "my-policy"]
+```
