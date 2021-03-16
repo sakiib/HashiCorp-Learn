@@ -33,3 +33,14 @@ identity_policies    []
 policies             ["root"]
 ```
 * Revoke token: `$ vault token revoke s.iyNUhq8Ov4hIAx6snw5mB2nL`
+
+### Github Authentication
+* `$ vault auth enable github`
+* `$ vault write auth/github/config organization=hashicorp` Now all users within the hashicorp Github organization are able to authenticate.
+* `$ vault auth list`
+```
+Path       Type      Description
+----       ----      -----------
+github/    github    n/a
+token/     token     token based credentials
+```
