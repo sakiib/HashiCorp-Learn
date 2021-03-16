@@ -46,3 +46,5 @@ Version            1.3.4
 HA Enabled         true
 ```
 **After pasting in a valid key and confirming, you see that Vault is still sealed, but progress is made. Vault knows it has 1 key out of 3. Due to the nature of the algorithm, Vault doesn't know if it has the correct key until the threshold is reached.**
+
+* After unsealing `$ vault login <Initial_Root_Token>`
