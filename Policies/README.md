@@ -13,7 +13,7 @@ path "secret/data/foo" {
   capabilities = ["read"]
 }
 ```
-* With this policy, a user could write any secret to secret/data/, except to secret/data/foo, where only read access is allowed. Policies default to deny, so any access to an unspecified path is not allowed.
+* With this policy, a user could write any secret to `secret/data/`, except to `secret/data/foo`, where only read access is allowed. Policies **default to deny**, so any access to an unspecified path is not allowed.
 * Built-in policies `root` & `default` are required & can't be deleted.
 * View the default policy: `$ vault policy read default`
 * Write policy help: `$ vault policy write -h`
