@@ -1,6 +1,6 @@
 # Binding Policies
 
-* Get the list of policies: `$ vault policy list
+* Get the list of policies: `$ vault policy list`
 ```
 default
 root
