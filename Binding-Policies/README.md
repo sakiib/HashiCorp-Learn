@@ -18,5 +18,5 @@ path "secret/data/admin" {
 
 * Write Policy: `$ vault policy write <name_of_policy> <path_to_hcl_file>`
 * Create a token & associate with the policy: `$ vault token create -policy=<name_of_policy>`
-* Login to vault with the token: `$ vault login token='<token>'`
-* Export vault token: `$ export VAULT_TOKEN=<token>`
+* Export vault token: `$ export VAULT_TOKEN='<token>'`
+* Login to vault with the token: `$ vault login token=$VAULT_TOKEN`
